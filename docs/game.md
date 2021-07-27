@@ -534,7 +534,13 @@ Example：`https://www.iyingdi.com/tz/people/55547` ，id 是 `55547`
 
 ### 公告
 
-<Route author="15x15G" example="/pjsk/news" path="/pjsk/news"/>
+<Route author="15x15G" example="/pjsk/news/all" path="/pjsk/news/:category?/:fulltext?" :paramsDesc="['分类，见下表，默认为`all`','默认仅获取标题，填任意值获取公告内文（速度较慢）']">
+
+| 全部 | 公告        | 活动  | 扭蛋  | 乐曲  | BUG | 纪念活动 | 更新 & 链接 |
+| ---- | ----------- | ----- | ----- | ----- | --- | -------- | ----------- |
+| all  | information | event | gacha | music | bug | campaign | update      |
+
+</Route>
 
 ## 王者荣耀
 

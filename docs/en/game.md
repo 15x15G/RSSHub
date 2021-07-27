@@ -162,7 +162,12 @@ Compatible with Product with an URL like <https://store.playstation.com/en-us/pr
 
 ### News
 
-<Route author="15x15G" example="/pjsk/news" path="/pjsk/news"/>
+<RouteEn author="15x15G" example="/pjsk/news/all" path="/pjsk/news/:category?/:fulltext?" :paramsDesc="['Default to `all` ','Default to get title only, set to any value to get the full article']">
+
+| all | information | event | gacha | music | bug | campaign | update |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+
+</RouteEn>
 
 ## Steam
 
